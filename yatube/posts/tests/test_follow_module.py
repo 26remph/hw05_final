@@ -119,7 +119,6 @@ class TestComments(TestCase):
     def test_add_entry_in_follow(self):
         """Тестируем добавление записей в базу"""
         count = Follow.objects.count()
-        print(count)
         url = reverse(
             self.view_profile_follow,
             args=[self.author_leo.username]

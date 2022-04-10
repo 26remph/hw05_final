@@ -56,13 +56,9 @@ def profile(request, username):
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
 
-    following = False
-    if request.user.is_authenticated:
-        following = user.following.filter(
-            author=user,
-            user=request.user
-        ).exists()
-
+    following = (request.user.is_authenticated and user.following.filter(
+        author=user, user=request.user
+    ).exists())
     context = {
         'author': user,
         'page_obj': page_obj,
@@ -162,13 +158,10 @@ def add_comment(request, post_id):
 @login_required
 def follow_index(request):
     """Страница всех подписок"""
-    user = get_object_or_404(User, username=request.user)
-    authors = user.follower.values('author_id')
-
     posts_list = Post.objects.select_related(
         'author'
     ).filter(
-        author__in=authors
+        author__following__user=request.user
     )
 
     paginator = Paginator(posts_list, SLICE_POSTS)
@@ -189,18 +182,21 @@ def profile_follow(request, username):
     param: username - автор поста
     """
     author = get_object_or_404(User, username=username)
-    user = get_object_or_404(User, username=request.user)
+    entry = Follow.objects.filter(
+        user=request.user,
+        author=author)
 
-    try:
-        Follow.objects.create(user=user, author=author)
-    except IntegrityError as e:
-        messages.error(request,
-                       f'Ошибка записи базу данных: {e.args}',
-                       extra_tags="alert alert-danger"
-                       )
+    if author != request.user and not entry.exists():
+        try:
+            Follow.objects.create(user=request.user, author=author)
+        except IntegrityError as e:
+            messages.error(request,
+                           f'Ошибка записи базу данных: {e.args}',
+                           extra_tags="alert alert-danger"
+                           )
 
-    except BaseException as e:
-        messages.error(request, e.args, extra_tags="alert alert-danger")
+        except BaseException as e:
+            messages.error(request, e.args, extra_tags="alert alert-danger")
 
     return redirect(reverse('posts:profile', args=[username]))
 
@@ -211,8 +207,8 @@ def profile_unfollow(request, username):
     param: username - автор поста
     """
     author = get_object_or_404(User, username=username)
-    user = get_object_or_404(User, username=request.user)
-
-    Follow.objects.filter(user=user, author=author).delete()
+    entry = Follow.objects.filter(user=request.user, author=author)
+    if entry.exists():
+        entry.delete()
 
     return redirect(reverse('posts:index'))
