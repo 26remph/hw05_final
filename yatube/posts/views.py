@@ -1,7 +1,5 @@
-from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
-from django.db import IntegrityError
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 
@@ -182,21 +180,10 @@ def profile_follow(request, username):
     param: username - автор поста
     """
     author = get_object_or_404(User, username=username)
-    entry = Follow.objects.filter(
-        user=request.user,
-        author=author)
+    entry = Follow.objects.filter(user=request.user, author=author)
 
     if author != request.user and not entry.exists():
-        try:
-            Follow.objects.create(user=request.user, author=author)
-        except IntegrityError as e:
-            messages.error(request,
-                           f'Ошибка записи базу данных: {e.args}',
-                           extra_tags="alert alert-danger"
-                           )
-
-        except BaseException as e:
-            messages.error(request, e.args, extra_tags="alert alert-danger")
+        Follow.objects.create(user=request.user, author=author)
 
     return redirect(reverse('posts:profile', args=[username]))
 
