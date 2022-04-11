@@ -168,4 +168,5 @@ class PostFormTests(TestCase):
             self.post_with_image.image,
             f'Картинка поста `{self.post_with_image.image}` и'
             f'картинка в `context` {post.image} страницы '
-            f'отличаются .')
+            f'отличаются .'
+        )

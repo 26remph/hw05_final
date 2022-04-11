@@ -18,7 +18,8 @@ class TestTemplateView(TestCase):
                     self.asserFalse(
                         False,
                         msg=f"Страница {url} работает не правильно. "
-                            f"Ошибка {e}")
+                            f"Ошибка {e}"
+                    )
 
                 self.assertNotEqual(
                     response.status_code,
