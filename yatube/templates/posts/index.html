@@ -8,9 +8,10 @@
 {% block content%}
   {% cache 20 index_page page_obj.number %}
     <div class="container py-5">
-      <h2>Последние обновления на сайте</h2>
 
         {% include 'posts/includes/switcher.html' %}
+
+        <h1>Последние обновления на сайте</h1>
 
         {% for post in page_obj%}
           {% include 'posts/includes/post_list.html' %}
