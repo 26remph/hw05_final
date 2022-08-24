@@ -1,10 +1,12 @@
-<h1>
-    <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
-    <span>$\textcolor{red}{\text{Ya}}{\text{tube}}$</span>
-</h1>
+<div>
+    <h1>
+        <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
+        <span>$\textcolor{red}{\text{Ya}}{\text{tube}}$</span>
+    </h1>
+</div>
 
 
-## Описание:
+## Описание:  
 Социальная сеть блогеров. Она даст пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать понравившиеся записи.
 
 Технологии:
