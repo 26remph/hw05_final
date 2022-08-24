@@ -2,6 +2,7 @@
     <h1>
         <span style="color:red">Ya</span><span>tube</span>
     </h1>
+    <span style="color:red">Ya</span><span>tube</span>
 </div>
 
 ## Описание:
