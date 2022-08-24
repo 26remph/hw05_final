@@ -3,10 +3,13 @@
         <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
         <span>$\textcolor{red}{\text{Ya}}{\text{tube}}$</span>
     </h1>
-    <h4>
-        социальная сеть для публикации блогов
-    </h4>
+    <h6>
+        (социальная сеть для публикации блогов)
+    </h6>
 </div>
+<br>
+<br>
+<br>
 
 
 ## Описание:  
