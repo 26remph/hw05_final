@@ -3,7 +3,7 @@
 </div>
 <div >
     <h1>
-        <span display: inline>$$\textcolor{red}{\text{Ya}}{\text{tube}}$$</span>
+        <span align="left">$$\textcolor{red}{\text{Ya}}{\text{tube}}$$</span>
     </h1>
 </div>
 
