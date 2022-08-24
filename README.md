@@ -2,7 +2,6 @@
     <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
     <h1>
         <span>$$\textcolor{red}{\text{Ya}}{\text{tube}}$$</span>
-        <span>tube</span>
     </h1>
 </div>
 
