@@ -6,8 +6,6 @@
     </h1>
 </div>
 
-$$\textcolor{red}{\text{Ya}}{\text{tube}. 
-$$\textcolor{yellow}{\text{Hello World}}{\text{Hello World}}\textcolor{yellow}{\text{Hello World}}$$. 
 
 ## Описание:
 Социальная сеть блогеров. Она даст пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать понравившиеся записи.
