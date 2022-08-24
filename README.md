@@ -6,7 +6,12 @@
     </h1>
 </div>
   
-### Some text
+### Some text.  
+{: .gitlab-orange}
+
+### Gitlab orange  
+{: .gitlab-orange}
+
 + some-text +. 
 - some-text -  
 # some-text #. 
