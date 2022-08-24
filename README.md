@@ -1,4 +1,4 @@
-<div>
+<div align="center">
     <img hspace="6px" float="center" src="./yatube/static/img/logo.png" width="60"/>
 </div>
 <div >
