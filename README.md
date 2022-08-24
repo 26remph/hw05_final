@@ -6,16 +6,7 @@
     </h1>
 </div>
   
-### Some text.  
-{: .gitlab-orange}
-
-### Gitlab orange  
-{: .gitlab-orange}
-
-+ some-text +. 
-- some-text -  
-# some-text #. 
-* some-text *. 
+$$\textcolor{yellow}{\text{Hello World}}$$ tube
 
 ## Описание:
 Социальная сеть блогеров. Она даст пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать понравившиеся записи.
