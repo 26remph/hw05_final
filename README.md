@@ -6,11 +6,11 @@
 </div>
 
 -ya-
--YA-
-__Warning__
-__Warning__
-__Warning__
-> __Note__ or > __Warning__ markdown syntax.
+-YA-  
+__Warning__. 
+__Warning__. 
+__Warning__. 
+> __Note__ or > __Warning__ markdown syntax.  
 
 <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
   <style>
