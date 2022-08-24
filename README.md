@@ -1,12 +1,13 @@
 <div>
     <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
     <h1>
-        <span>$$\textcolor{red}{\text{Ya}}$$</span>
+        <span>$$\textcolor{yellow}{\text{Hello World}}{\text{Hello World}}\textcolor{yellow}{\text{Hello World}}$$</span>
         <span>tube</span>
     </h1>
 </div>
 
-$$\textcolor{red}{\text{Ya}}{\text{tube}
+$$\textcolor{red}{\text{Ya}}{\text{tube}. 
+$$\textcolor{yellow}{\text{Hello World}}{\text{Hello World}}\textcolor{yellow}{\text{Hello World}}$$. 
 
 ## Описание:
 Социальная сеть блогеров. Она даст пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать понравившиеся записи.
