@@ -1,11 +1,11 @@
 <div>
     <h1>
         <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
-        <span style="color:red">- Ya -</span><span>tube</span>
+        <span style="color:red">$$\textcolor{yellow}{\text{Hello World}}$$ </span><span>tube</span>
     </h1>
 </div>
   
-$$\textcolor{yellow}{\text{Hello World}}$$    
+   
 
 ## Описание:
 Социальная сеть блогеров. Она даст пользователям возможность создать учетную запись, публиковать записи, подписываться на любимых авторов и комментировать понравившиеся записи.
