@@ -4,14 +4,9 @@
         <span style="color:red">- Ya -</span><span>tube</span>
     </h1>
 </div>
-
---ya--  
---YA--      
-__Warning__. 
-__Warning__.  
-__Warning__   
-__Note__. 
-or > __Warning__ markdown syntax.  
+  
+$$\textcolor{yellow}{\text{Hello World}}$$    
+$$\textcolor{yellow}{\text{Hello World}}{\text{Hello World}}\textcolor{yellow}{\text{Hello World}}$$
 
 <svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
   <style>
