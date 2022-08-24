@@ -1,8 +1,10 @@
 <div>
-    <img display: inline hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
+    <img hspace="6px" float="center" src="./yatube/static/img/logo.png" width="60"/>
 </div>
 <div >
-    <span display: inline>$$\textcolor{red}{\text{Ya}}{\text{tube}}$$</span>
+    <h1>
+        <span display: inline>$$\textcolor{red}{\text{Ya}}{\text{tube}}$$</span>
+    </h1>
 </div>
 
 ## Описание:
