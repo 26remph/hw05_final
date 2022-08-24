@@ -1,7 +1,8 @@
 <div>
     <h1>
         <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
-        <span>$\textcolor{red}{\text{Ya}}{\text{tube}}{\text{tube}}$</span>
+        <span>$\textcolor{red}{\text{Ya}}{\text{tube}} 
+            {\text{tube}}$</span>
     </h1>
     <h5>
         (социальная сеть для публикации блогов)
