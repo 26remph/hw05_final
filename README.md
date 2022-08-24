@@ -1,7 +1,7 @@
 <div>
     <h1>
         <img hspace="6px" align="center" src="./yatube/static/img/logo.png" width="60"/>
-        <span style="color:red">$$\textcolor{yellow}{\text{Hello World}}$$ </span><span>tube</span>
+        $$\textcolor{red}{\text{Ya}}$$tube
     </h1>
 </div>
   
