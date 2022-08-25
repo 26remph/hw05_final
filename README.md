@@ -19,6 +19,12 @@
 * jwt token authorize
 * Pillow 8.3.1
 * sorl-thumbnail 12.7.0
+* unittest (Unit test framework)
+
+### Покрытие тестами
+Покрытие тестами выполнено при помощи unittest(Unit test framework)
+Тесты находятся в папке `./yatube/posts/test/`, тесты покрывают следующие направления:
+-
 
 ## Запуск проекта в dev-режиме:
 
